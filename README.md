@@ -7,7 +7,7 @@ Knowing this, I plan to investigate these differing viewpoints by analyzing real
 
 ![Process Flow Chart](img/flow_chart.png)
 
-The flowchart aboves provides a clear overview of the end-to-end process for analyzing public opinions on the debate “Does hard work beat talent?” based on YouTube comment data. The process begins with data preparation, where comments from a selected video are explored and preprocessed to remove noise, inconsistencies, and irrelevant data. This includes cleaning the likes and time formats, filtering out duplicates, and excluding comments from the video creator to ensure focus on audience perspectives.
+The flowchart above provides a clear overview of the end-to-end process for analyzing public opinions on the debate “Does hard work beat talent?” based on YouTube comment data. The process begins with data preparation, where comments from a selected video are explored and preprocessed to remove noise, inconsistencies, and irrelevant data. This includes cleaning the likes and time formats, filtering out duplicates, and excluding comments from the video creator to ensure focus on audience perspectives.
 
 Next, feature engineering is performed where comments are categorized into four stance labels: 'Pro', 'Contra', 'Neutral', and 'Irrelevant' with the help of an AI model, granite-3.3-8b-instruct, which I tuned specifically for classification. Exploratory data analysis (EDA) follows to identify patterns in engagement, stance distribution, and comment timing.
 
@@ -77,5 +77,6 @@ For the entire analysis, I choose to use IBM Granite (`granite-3.3-8b-instruct`)
 The model has been fine-tuned with instruction-following data and **optimized for tasks like text classification**, which is central to identifying whether a comment supports hard work, favors talent, stays neutral, or is irrelevant. Its architecture allows it to understand nuanced language and subtle argumentation often present in real-world comments.
 
 Additionally, Granite is designed to **perform well in summarization tasks**, making it highly effective for deriving key insights from categorized comments and summarizing multiple sides of the debate.
+
 
 Source: https://docs.api.nvidia.com/nim/reference/ibm-granite-3_3-8b-instruct
